@@ -311,8 +311,6 @@ public class AddTableWindow extends javax.swing.JFrame {
         SQL_Statement += ")";
 
         System.out.println(SQL_Statement);
-        
-        
 
         try {
        

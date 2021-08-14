@@ -308,6 +308,11 @@ public class TableModificationWindow extends javax.swing.JFrame {
                 ok_btn1MouseClicked(evt);
             }
         });
+        ok_btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ok_btn1ActionPerformed(evt);
+            }
+        });
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -317,7 +322,6 @@ public class TableModificationWindow extends javax.swing.JFrame {
 
             }
         ));
-        jTable3.setColumnSelectionAllowed(false);
         jTable3.getTableHeader().setReorderingAllowed(false);
         jScrollPane3.setViewportView(jTable3);
 
@@ -752,6 +756,10 @@ public class TableModificationWindow extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void ok_btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ok_btn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ok_btn1ActionPerformed
     public Vector getChosenRow() {
         int chosenRowIndex = jTable2.getSelectedRow();
         if (chosenRowIndex == -1) {
